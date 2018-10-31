@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { Invitation } from './components/Invitation';
+
 class App extends Component {
   render() {
     return (
@@ -11,6 +13,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
+          <Invitation compiler='Typescript' framework='React' />
           <a
             className="App-link"
             href="https://reactjs.org"

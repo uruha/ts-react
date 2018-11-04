@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Invitation } from './components/Invitation';
+import { Counter } from './components/Context';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
           <Invitation compiler='Typescript' framework='React' />
+          <Counter />
           <a
             className="App-link"
             href="https://reactjs.org"

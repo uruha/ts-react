@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 export interface InvitationProps {
-    compiler: string;
-    framework: string;
+    readonly compiler: string;
+    readonly framework: string;
 }
 
 export const Invitation: React.SFC<InvitationProps> = (props: InvitationProps) => (

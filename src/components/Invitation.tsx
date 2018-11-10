@@ -11,3 +11,11 @@ export const Invitation: React.SFC<InvitationProps> = (props: InvitationProps) =
         <li>Framework: {props.framework}</li>
     </ul>
 );
+
+/**
+ * @NOTE
+ * React.memo is imcompatible for typedefs.
+ * @see https://github.com/facebook/react/issues/14059
+ * for future 👇
+ */
+// export defautl React.memo(Invitation);

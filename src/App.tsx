@@ -4,6 +4,7 @@ import './App.css';
 
 import { Invitation } from './components/Invitation';
 import { Counter } from './components/Context';
+import HooksCounter from './components/Hooks';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           </p>
           <Invitation compiler='Typescript' framework='React' />
           <Counter />
+          <HooksCounter initialCount={0} />
           <a
             className="App-link"
             href="https://reactjs.org"
